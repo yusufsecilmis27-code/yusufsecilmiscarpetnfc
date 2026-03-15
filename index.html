@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NFC Panel - Yusuf Seçilmiş Carpet</title>
+<meta name="description" content="Yusuf Seçilmiş Carpet NFC Dashboard - Halı satış ve iletişim paneli. Instagram, WhatsApp, telefon ve konum bağlantıları.">
+
+<!-- GOOGLE FONT (Opsiyonel, modern görünüm için) -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+/* =========================
+   GENEL SAYFA AYARLARI
+========================= */
+body{
+    margin:0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-image:url("arka.jpg");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+/* =========================
+   ÜST BAŞLIK
+========================= */
+header{
+    background:rgba(31,31,31,0.9);
+    padding:25px 20px;
+    font-size:28px;
+    font-weight:600;
+    letter-spacing:1px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* =========================
+   DASHBOARD KARTLARI
+========================= */
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    gap:20px;
+    padding:30px;
+    flex-grow:1; /* Footer’a kadar uzanması için */
+}
+
+/* Kart tasarımı */
+.card{
+    background:rgba(26,26,26,0.9);
+    padding:35px 20px;
+    border-radius:20px;
+    font-size:18px;
+    text-decoration:none;
+    color:white;
+    transition:0.3s ease;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    cursor:pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Hover efekti */
+.card:hover{
+    background:#ff3b3b;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(255,59,59,0.4);
+}
+
+/* Kart ikonları için opsiyonel */
+.card i{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+/* =========================
+   ALT BİLGİ
+========================= */
+footer{
+    margin-top:20px;
+    opacity:0.8;
+    font-size:14px;
+    padding:15px 0;
+    background:rgba(0,0,0,0.6);
+}
+
+/* =========================
+   MOBİL VE TABLET ÖZEL
+========================= */
+@media (max-width: 600px){
+    header{
+        font-size:24px;
+        padding:20px;
+    }
+
+    .card{
+        font-size:16px;
+        padding:25px 15px;
+    }
+}
+</style>
+<!-- FONT AWESOME ICONS (opsiyonel) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+<header>Yusuf Seçilmiş Carpet</header>
+
+<div class="container">
+
+    <a class="card" href="https://www.instagram.com/yusufsecilmiscarpet/" target="_blank">
+        <i class="fab fa-instagram"></i>
+        Instagram
+    </a>
+
+    <a class="card" href="https://wa.me/905445452967" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        WhatsApp
+    </a>
+
+    <a class="card" href="tel:+905445452967">
+        <i class="fas fa-phone"></i>
+        Telefon
+    </a>
+
+    <a class="card" href="https://www.google.com/maps?q=40.7128,74.0060" target="_blank">
+        <i class="fas fa-map-marker-alt"></i>
+        Konum
+    </a>
+
+    <a class="card" href="about.html">
+        <i class="fas fa-user"></i>
+        Hakkımda
+    </a>
+
+</div>
+
+<footer>
+Yusuf Seçilmiş Carpet NFC Dashboard | Tüm hakları saklıdır. | 2026
+</footer>
+
+</body>
+</html>
